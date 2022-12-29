@@ -1,0 +1,231 @@
+.box-sizing-bb {
+    box-sizing: border-box;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.content-box {
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-bottom: 30px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: @primary;
+    // background-color: #fff;
+}
+
+.content-main {
+    box-sizing: border-box;
+    height: 95%;
+    min-width: 1440px;
+    min-height: 750px;
+    background-color: @primary;
+    border-radius: 5px;
+    box-shadow: 15px 4px 6px 0px @mainShadow;
+    padding: 15px
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.overText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+// 弹性盒模型
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// 纵向排列
+.flex-c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+// 横向排列
+.flex-r {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+// 横向排列布局居中
+.flex-j {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    box-pack: center;
+}
+
+// 横向两边分布
+.flex-j-s {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+// 横向右侧分布
+.flex-j-r {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+}
+
+// 横向左侧分布
+.flex-j-l {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+}
+.flex-j-a{
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+}
+
+//纵向排列布局居中
+.flex-a {
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+.flex-wrap{
+    flex-wrap:wrap
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.d-flex {
+    display: flex;
+}
+.d-inline-flex {
+    display: inline-flex;
+}
+.flex-a-c {
+    align-items: center;
+}
+
+#nprogress .bar {
+
+    background: #2d9 !important; //自定义颜色
+    height: 3px !important
+}
+.spaceText{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cur{
+    cursor: pointer;
+}
+
+.wb{
+   width:100%
+}
+.wb60{
+    .widthCale(62px)
+}
+.he{
+    height: 100%;
+}
+.mt10{
+    margin-top:10px
+}
+.mt30{
+    margin-top:30px
+}
+
+.orderTitle {
+    margin-bottom: 20px;
+}
+
+.orderSum {
+    .flexContent(@justify: flex-end);
+    margin-right: 20px;
+}
+
+.tagText {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.capListStyle {
+    margin-left: 145px;
+    margin-bottom: 18px;
+    .flexContent(@wrap: wrap);
+}
+
+.mx {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.tableCar {
+    margin-left: 150px;
+    margin-bottom: 40px;
+}
+
+.input-type-number{
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{   
+        -webkit-appearance: none !important;
+    }
+    input[type="number"]{
+        -moz-appearance:textfield;
+    }
+}

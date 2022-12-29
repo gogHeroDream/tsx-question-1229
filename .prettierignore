@@ -1,0 +1,10 @@
+build/*.js
+src/assets
+node_modules
+public
+dist
+auto-import.d.ts
+components.d.ts
+**/*.svg
+**/*.sh
+*.d.ts

@@ -1,0 +1,48 @@
+// css文件引入
+@import './color_dark.less';
+@import './customStyle.less';
+@import './icon.less';
+@import './method.less';
+@import './main.less';
+@import '../assets/iconfont/iconfont.css';
+@primary: #ffffff; //上左tabbar主色调-白色
+/* 文字按钮正常样式 按钮配色 */
+@themeColor: #2e53eb !important;
+@blueBtnColor: #2e53eb; // 连接文字/基础标题
+@blueBtnColorHover:rgba(46, 83, 235, 0.8);
+@blueBtnColorHover: #809bff;
+@blueBtnDisabled: #afbdf7;
+@loginbackground:rgba(255, 255, 255, 0.3);
+@loginTabBg: #eaedfd;
+@loginBottomTitle:rgba(255, 255, 255, 0.664);
+@linkColorHover: lighten(@blueBtnColor, 15%); // 连接文字滑过
+@baseColor:#000;
+@formSearchBh: #f9f9fb;
+@labelColor:#222222;
+@loginTabFontColor: #2e5bff;
+@searchFormTextColor: #202224;
+@collapseHover:#1940df;
+@loseColor: #ccc; // 失效文字
+@auxiliaryColor: #999; // 辅助文字颜色
+@mainShadow:#bbb;
+@capacityListColor:#666666;
+@capacityListBgColor:#F4F6FC;
+@capacityListBorder:#E0E0E0;
+@dialogBorder:#E0E0E0;
+@danger:#e81d1d;
+ 
+a {
+    text-decoration: none;
+    color: @blueBtnColor;
+
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+
+    &:hover {
+        color: lighten(@blueBtnColor, 10%);
+    }
+}
+
+

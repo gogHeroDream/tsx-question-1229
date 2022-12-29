@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true, //解决for循环key报错
+    "isolatedModules": true, //如此做，TS 会警告你不要使用隔离（isolated）转译的功能。
+    "esModuleInterop": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "skipLibCheck": true,
+    "types": [
+      "vite/client",
+      "@types/node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      // 此处对应vite.config.ts中的文件resolveAlias别名设置
+      "@": [
+        "src/*"
+      ],
+      "@*":[
+        "src/*"
+      ]
+    }
+  },
+  // 类似白名单 控制加载的文件
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/auto-imports.d.ts",
+    "./commitlint.config.ts",
+    "./config",
+    ".eslintrc.js",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.js"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "list": [
+    {
+      "date": 1660737564000,
+      "name": "系统管理员",
+      "explanation": "这是一级角色",
+      "status": "正常",
+      "creator": "admin"
+    },
+    {
+      "date": 1462291200000,
+      "name": "产品经理",
+      "explanation": "这是二级角色",
+      "status": "正常",
+      "creator": "admin"
+    },
+    {
+      "date": 1462032000000,
+      "name": "测试人员",
+      "explanation": "这是三级角色",
+      "status": "正常",
+      "creator": "admin"
+    },
+    {
+      "date": 1462204800000,
+      "name": "运营专员",
+      "explanation": "这是二级角色",
+      "status": "正常",
+      "creator": "admin"
+    }
+  ]
+}

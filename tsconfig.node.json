@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
+  },
+  // 类似于白名单，根目录引入文件需要此处配置
+  "include": [
+    ".eslintrc.js",
+    "vite.config.ts",
+    "commitlint.config.ts",
+    "./config/index.ts"
+  ]
+}

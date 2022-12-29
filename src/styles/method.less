@@ -1,0 +1,14 @@
+.flexContent(@justify: normal, @align: normal,@arrange:row,@content:normal,@wrap:nowrap) {
+    display: flex;
+    flex-direction: @arrange;
+    justify-content: @justify;
+    align-items: @align;
+    align-content: @content;
+    flex-wrap:@wrap
+}
+.widthCale(@cale:100px){
+  width:~"calc(100% - @{cale})"
+}
+.heightCale(@cale: 156px) {
+  height:~"calc(100% - @{cale})"
+}

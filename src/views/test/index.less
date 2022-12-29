@@ -1,0 +1,23 @@
+.veh-main {
+    .flexContent(@arrange: column);
+    // .heightCale(40px);
+    .veh-btn {
+            margin: 15px 0 15px 0;
+    }
+}
+.operation-detail {
+    .flexContent(@justify: space-around);
+    label {
+        cursor: pointer;
+        &:hover {
+            color: @blueBtnColorHover
+        }
+    }
+}
+.active {
+    background-color: @capacityListBgColor;
+}
+.capInfo{
+    height:36px;
+    line-height: 36px;
+}

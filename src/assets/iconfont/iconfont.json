@@ -1,0 +1,16 @@
+{
+  "id": "3836343",
+  "name": "tms/物辅",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "tms/物辅",
+  "glyphs": [
+    {
+      "icon_id": "2678577",
+      "name": "表单库",
+      "font_class": "biaodanku",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
